@@ -14,7 +14,31 @@
     <title>My weather application</title>
   </head>
   <body>
-   
+    <header>
+        <form>
+            <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-input"
+            id="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+    </header>
+    <main>
+        <div class="currentInfo">
+            <h1>City</h1>
+            <p>
+            Day 10:00, scattered clouds
+            <br />
+             Humidity: x %, Wind: 3,10 km/h
+             </p>
+        </div>
+        <div class="currentTemperature">
+             🌤12°C
+        </div>
+    </main>
       <footer>
         <p>
           This project was coded by
