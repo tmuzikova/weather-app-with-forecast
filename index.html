@@ -11,16 +11,20 @@
     />
     <link rel="stylesheet" href="src/styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>My weather application</title>
   </head>
   <body>
     <div class="wholeApp">
-    <header>
+      <header>
         <form id="search-form">
-            <input
+          <input
             type="search"
             placeholder="Enter a city.."
             required
@@ -29,22 +33,29 @@
           />
           <input type="submit" value="Search" class="search-button" />
         </form>
-    </header>
-    <main>
+      </header>
+      <main>
         <div class="weatherAppData">
-            <div class="currentInfo">
-                <h1 class="cityName" id="city-name">City</h1>
-                <p class="weather-app-details">
-                Day 10:00, scattered clouds
-                <br />
-                 Humidity: <strong> x %</strong>, Wind: <strong>3,10 km/h</strong>
-                 </p>
-            </div>
-            <div class="currentTemperature">
-                 <div class="emoji">🌤</div><div class="tempValue">12</div><div class="tempUnit">°C</div>
-            </div>
+          <div class="currentInfo">
+            <h1 class="cityName" id="city-name"></h1>
+            <p class="weather-app-details">
+              Day 10:00,
+              <span class="weather-description" id="weather-description"
+                >scattered clouds</span
+              >
+              <br />
+              Humidity:
+              <strong> <span class="humidity" id="humidity"></span> %</strong>,
+              Wind: <strong><span class="wind" id="wind"></span> km/h</strong>
+            </p>
+          </div>
+          <div class="currentTemperature">
+            <img src="" class="weather-picture" id="weather-picture" />
+            <div class="tempValue" id="tempValue"></div>
+            <div class="tempUnit">°C</div>
+          </div>
         </div>
-    </main>
+      </main>
 
       <footer>
         <p>
@@ -53,18 +64,18 @@
             >Tereza Muzikova</a
           >
           and is
-          <a href="https://github.com/tmuzikova/weather-app-with-forecast" target="_blank">
+          <a
+            href="https://github.com/tmuzikova/weather-app-with-forecast"
+            target="_blank"
+          >
             on GitHub</a
           >
           and
-          <a
-            href="https://my-weather-app-forecast.netlify.app/"
-            target="_blank"
+          <a href="https://my-weather-app-forecast.netlify.app/" target="_blank"
             >hosted on Netlify</a
           >
         </p>
       </footer>
-      </div>
     </div>
   </body>
   <script src="src/index.js"></script>
