@@ -58,6 +58,7 @@ header {
 
 .currentTemperature {
   display: flex;
+  margin-top: 10px;
 }
 
 .tempValue {
@@ -67,7 +68,9 @@ header {
 }
 
 .weather-picture {
-  size: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
 }
 
 .tempUnit {
