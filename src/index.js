@@ -1,3 +1,30 @@
+//function to refresh the date info
+function refreshDate(responsedDate) {
+  let timestamp = responsedDate;
+  let date = new Date(timestamp * 1000);
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let currentDay = document.getElementById("current-day");
+  currentDay.innerHTML = days[date.getDay()];
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let currentTime = document.getElementById("current-time");
+  currentTime.innerHTML = `${hours}:${minutes}`;
+}
+
 //function that uses api response to update weather data on the site
 function refreshWeatherData(response) {
   let currentTemp = document.getElementById("tempValue");
@@ -15,6 +42,8 @@ function refreshWeatherData(response) {
   wind.innerHTML = response.data.wind.speed.toFixed(1);
   weatherDescription.innerHTML = response.data.condition.description;
   weatherPicture.src = response.data.condition.icon_url;
+
+  refreshDate(response.data.time);
 }
 
 //function to call api
