@@ -26,7 +26,7 @@ header {
 }
 
 .search-button {
-  background-color: violet;
+  background-color: #605996;
   padding: 15px 20px;
   border: none;
   border-radius: 4px;
@@ -81,19 +81,32 @@ header {
 .weather-forecast {
   text-align: center;
   margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .weather-forecast-date {
-  font-size: 16px;
+  font-size: 18px;
   opacity: 0.5;
+  margin-bottom: 10px;
 }
 
 .weather-forecast-temperature-min {
   opacity: 0.5;
 }
 
+.weather-forecast-temperature-max {
+  font-weight: bolder;
+}
+
 .weather-forecast-temperatures {
-  font-size: 13px;
+  font-size: 14px;
+  color: violet;
+}
+
+img {
+  margin-bottom: 10px;
 }
 
 main {
@@ -105,9 +118,9 @@ footer {
   padding: 0px 20px;
   font-size: 13px;
   text-align: center;
-  opacity: 0.33;
+  opacity: 0.5;
 }
 
 a {
-  color: violet;
+  color: #605996;
 }
